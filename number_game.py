@@ -67,7 +67,7 @@ def number_guessing_game():
             # Display remaining attempts
             if max_attempts != float("inf"):
                 attempts_left = max_attempts - attempts
-                print(f"Remaining attemps: {attempts_left}")
+                print(f"Remaining attempts: {attempts_left}")
         
         except ValueError:
             print("Please enter a valid number.")
@@ -91,7 +91,7 @@ def number_guessing_game():
         print(f"Game over! You've used all {max_attempts} attempts")
         print(f"The number was {random_number} ")
 
-    play_again = input("\nWould you like to play again? (yes/no):")
+    play_again = input("\nWould you like to play again? (yes/no): ").strip().lower()
     if play_again.startswith("y"):
         number_guessing_game()
     else:
